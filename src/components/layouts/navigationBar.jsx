@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Container, NavDropdown, Button, Modal } from "react-bootstrap";
 import { observer } from "mobx-react";
@@ -134,6 +135,13 @@ const NavigationBar = observer(() => {
             <Nav>
               <Nav.Link onClick={() => setShowLogoutModal(true)}>로그아웃</Nav.Link>
               <Nav.Link href={"/member/myinfo"}>내 정보</Nav.Link>
+
+              <Nav.Link onClick={handleLogout}>로그아웃</Nav.Link>
+              <Nav.Link>
+                <Link href="/" legacyBehavior>
+                  내 정보
+                </Link>
+              </Nav.Link>
             </Nav>
           ) : (
             <Nav>
