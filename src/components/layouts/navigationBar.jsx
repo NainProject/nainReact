@@ -74,7 +74,7 @@ const NavigationBar = observer(() => {
                     </Link>
                     <br />
                     <Link href="/resume/AcceptedKeyword" passHref legacyBehavior>
-                      <a className="subword">합격자 키워드 분석</a>
+                      <a className="subword">직무 키워드 분석</a>
                     </Link>
                     <br />
                   </div>
